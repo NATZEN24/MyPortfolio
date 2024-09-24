@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020316;
+  color: white;
+}
+
+header {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.headingbox {
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 4em;
+}
+
+.fa-dragon {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.fa-dragon:hover {
+  color: #eee9a3;
+}
+
+.headingbox:hover {
+  color: #eee9a3;
+}
+
+.underlogo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.underlogoB {
+  display: none;
+  justify-content: start;
+  margin: 1rem;
+}
+
+.underlogoB img {
+  border-radius: 1rem;
+  margin-left: 1rem;
+  width: 50%;
+}
+
+.underlogo img {
+  border-radius: 1rem;
+  margin-left: 1rem;
+  width: 50%;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    font-size: 3rem;
+  }
+  .headingbox {
+    display: flex;
+    justify-content: center;
+  }
+  .underlogo {
+    display: none;
+  }
+  .underlogoB {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .fa-dragon {
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+  .underlogoB img {
+    width: 60%;
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1030px) {
+  header {
+    font-size: 2.2rem;
+  }
+}
+.card {
+  background-color: #020316;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 1rem;
+  width: 18rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+main img:hover {
+  box-shadow: 0 0 10px 5px #eee9a3;
+}
+
+.card h5 {
+  font-weight: 400;
+}
+
+.card img {
+  border-radius: 1rem;
+  width: 90%;
+}
+
+.btn {
+  background-color: #020316;
+  border: none;
+  box-shadow: inset 3px 3px 5px rgba(97, 95, 95, 0.4), inset 3px 3px 5px rgba(97, 95, 95, 0.2), inset -3px -3px 5px rgba(255, 255, 255, 0.7), inset -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: white 1px solid;
+  padding: 1rem 1rem 0 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    width: 30rem;
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+  .card h5 {
+    font-size: 1.7rem;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-top: white 0.1rem solid;
+  border-bottom: white 0.1rem solid;
+  margin-bottom: 4rem;
+}
+
+footer p {
+  padding: 1rem 1rem 0 1rem;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+  footer {
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0.5rem;
+  border-left: 0.1rem solid white;
+  border-right: 0.1rem solid white;
+}
+
+nav ul li:nth-child(2) {
+  border: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+nav {
+  background-color: #020316;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  nav ul {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.info-box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(200deg, #eee9a3 0%, rgba(14, 6, 22, 0.9921568627) 50%, #020316 100%);
+  background-size: 200% 200%;
+  animation: gradientMotion 10s ease infinite;
+}
+
+.info-box h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.info-box h2:hover {
+  color: #b397e7;
+}
+
+.info-box p {
+  font-size: 1.7rem;
+  padding: 1rem;
+  animation: fade-in 7s linear forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.return a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  border: white 0.1rem solid;
+  font-size: 1.7rem;
+  padding: 0.5rem 2rem;
+}
+
+.return {
+  margin-top: 5rem;
+}
+
+@keyframes gradientMotion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.contact-box {
+  font-family: "Josefin Sans", sans-serif;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(40deg, #eee9a3 0%, rgba(14, 6, 22, 0.9921568627) 50%, #020316 100%);
+  background-size: 200% 200%;
+  animation: gradientMotion 10s ease infinite;
+}
+
+.contact-box h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.contact-box h2:hover {
+  color: #b397e7;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.fa-brands:hover {
+  box-shadow: 0 0 10px 5px #eee9a3;
+}
+
+.contact-bar div:nth-child(2) {
+  border-bottom: 0.1rem solid white;
+  border-top: 0.1rem solid white;
+}
+
+.contact-bar div {
+  animation: fade-in 7s linear forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

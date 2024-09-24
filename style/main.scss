@@ -1,0 +1,34 @@
+$genericFont: "Josefin Sans", sans-serif;
+$genericPadding: 1rem;
+$genericMargin: 1rem;
+$genericBorderRadius: 2rem;
+$mobBorderRadius:1rem;
+$generibBGcolor: #020316;
+$genericFontColor: white;
+$hoverColor1: #eee9a3;
+$hoverColor2: #b397e7;
+
+$genericFontSize: 3rem;
+$mobileFontSize: 1.7rem;
+$DragonFontSize: 3rem;
+$mobDragonFontSize: 1.5rem;
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body {
+    background-color: $generibBGcolor;
+    color: $genericFontColor; 
+}
+
+@import "header";
+@import "corp";
+@import "footer";
+@import "navbar";
+@import "info";
+@import "contact"

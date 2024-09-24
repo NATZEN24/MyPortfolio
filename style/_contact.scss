@@ -1,0 +1,43 @@
+.contact-box{
+    font-family: $genericFont;
+    flex-direction: column;
+    padding: $genericPadding;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(40deg,#eee9a3 0%,#0e0616fd 50%, #020316 100%);
+    background-size: 200% 200%;
+    animation: gradientMotion 10s ease infinite;
+}
+
+.contact-box h2 {
+    font-size: $genericFontSize;
+    padding: $genericPadding;
+}
+.contact-box h2:hover{
+    color: $hoverColor2;
+}
+.fa-brands {
+    color: $genericFontColor;
+    font-size: $genericFontSize;
+    padding: $genericPadding;  
+}
+.fa-brands:hover {
+    box-shadow: 0 0 10px 5px #eee9a3;
+}
+.contact-bar div:nth-child(2){
+    border-bottom: .1rem solid white;
+    border-top: .1rem solid white;
+}
+.contact-bar div{
+    animation: fade-in 7s linear forwards;
+}
+
+@keyframes fade-in {
+    
+        from { opacity: 0; }
+        to { opacity: 1; }
+      
+}
+

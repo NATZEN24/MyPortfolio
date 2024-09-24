@@ -1,0 +1,58 @@
+.info-box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $genericPadding;
+  font-family: $genericFont;
+  background: linear-gradient(200deg, #eee9a3 0%, #0e0616fd 50%, #020316 100%);
+  background-size: 200% 200%;
+  animation: gradientMotion 10s ease infinite;
+}
+
+.info-box h2 {
+  font-size: $genericFontSize;
+  padding: $genericPadding;
+}
+.info-box h2:hover {
+  color: $hoverColor2;
+}
+.info-box p {
+  font-size: $mobileFontSize;
+  padding: $genericPadding;
+
+  animation: fade-in 7s linear forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.return a {
+  text-decoration: none;
+  color: $genericFontColor;
+  font-weight: 300;
+  border: white 0.1rem solid;
+  font-size: $mobileFontSize;
+  padding: 0.5rem 2rem;
+}
+.return {
+  margin-top: 5rem;
+}
+
+@keyframes gradientMotion {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
