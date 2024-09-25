@@ -5,7 +5,7 @@
   font-weight: 300;
   font-size: 1rem;
   border-radius: $mobBorderRadius;
-  width: 18rem;
+  width: 40rem;
 }
 .card-text {
   display: flex;
@@ -21,7 +21,7 @@ main img:hover {
 }
 .card img {
   border-radius: $mobBorderRadius;
-  width: 90%;
+  width: 100%;
 }
 .btn {
   background-color: $generibBGcolor;
@@ -34,6 +34,7 @@ main img:hover {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   border-top: white 1px solid;
   padding: 1rem 1rem 0 1rem;
@@ -42,6 +43,7 @@ main {
   .card {
     width: 30rem;
     font-size: $mobDragonFontSize;
+    padding: $genericPadding;
   }
   .btn {
     font-size: $mobDragonFontSize;
@@ -50,4 +52,10 @@ main {
     font-size: $mobileFontSize;
   }
  
+}
+@media screen and (min-width: 751px) and (max-width: 1030px) {
+  .card {
+    width: 40rem;
+  }
+
 }

@@ -98,7 +98,7 @@ header h1 {
   font-weight: 300;
   font-size: 1rem;
   border-radius: 1rem;
-  width: 18rem;
+  width: 40rem;
 }
 
 .card-text {
@@ -116,7 +116,7 @@ main img:hover {
 
 .card img {
   border-radius: 1rem;
-  width: 90%;
+  width: 100%;
 }
 
 .btn {
@@ -128,6 +128,7 @@ main img:hover {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   border-top: white 1px solid;
   padding: 1rem 1rem 0 1rem;
@@ -137,12 +138,18 @@ main {
   .card {
     width: 30rem;
     font-size: 1.5rem;
+    padding: 1rem;
   }
   .btn {
     font-size: 1.5rem;
   }
   .card h5 {
     font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1030px) {
+  .card {
+    width: 40rem;
   }
 }
 footer {
@@ -257,8 +264,25 @@ nav {
 
 .return {
   margin-top: 5rem;
+  animation: slide-from-bottom 5s ease forwards;
 }
 
+@keyframes slide-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes gradientMotion {
   0% {
     background-position: 0% 50%;
